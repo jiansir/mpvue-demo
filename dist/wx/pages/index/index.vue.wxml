@@ -1,0 +1,36 @@
+<template name="96dee5fc">
+  <view class="_div data-v-814e36ba container">
+    <view class="_div data-v-814e36ba m-container">
+      <view class="_div data-v-814e36ba publish">
+        <view class="_div data-v-814e36ba publish-content">
+          <view class="_div data-v-814e36ba address">
+            <view class="_div data-v-814e36ba icon">
+              <view class="_div data-v-814e36ba start"></view>
+              <view class="_div data-v-814e36ba end"></view>
+            </view>
+            <view class="_div data-v-814e36ba content">
+              <view class="_div data-v-814e36ba item" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">{{startInput}}</view>
+              <view class="_div data-v-814e36ba item" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">{{endInput}}</view>
+            </view>
+            <view data-type="0" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-814e36ba {{[true ? 'switch' : '', routeType == 0 ? 'checked' : '']}}"></view>
+          </view>
+          <view class="_div data-v-814e36ba other-condition">
+            <view class="_div data-v-814e36ba date condition-item">
+              <view class="_div data-v-814e36ba icon"></view>
+              <picker mode="multiSelector" value="{{multiIndex}}" bindchange="handleProxy" bindcolumnchange="handleProxy" range="{{multiArray}}" class="_picker data-v-814e36ba picker" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+                <view class="_view data-v-814e36ba item">{{dateTime?dateTime:'出发时间'}}</view>
+              </picker>
+            </view>
+            <view class="_div data-v-814e36ba line"></view>
+            <view class="_div data-v-814e36ba number condition-item">
+              <view class="_div data-v-814e36ba icon"></view>
+              <picker bindchange="handleProxy" value="{{rideTemp}}" range="{{rideNumArr}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_picker data-v-814e36ba">
+                <view class="_div data-v-814e36ba item">{{rideNum}}人同行</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

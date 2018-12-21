@@ -1,0 +1,50 @@
+:root {
+  /* 输入框默认高度 */
+  --input-height: 100rpx;
+  /* 边框颜色 */
+  --border-color: #ECEEF2;
+
+  /* 常规字体颜色 */
+  --fc-normal: #404a59;
+  /* 占位字体颜色 placeholder等 */
+  --fc-middle: #7a8594;
+  /* 灰色颜色 */
+  --fc-grey: #b5bfce;
+
+  /* 灰色颜色 */
+  --red: #ff5b45;
+
+  /*------图标区域 start------*/
+  /* 切换图标 */
+  --icon-switch: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAclBMVEUAAAC1v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v861v87lbrU6AAAAJXRSTlMAD5xKCfTfcjjSHCjDLKvmhmpA+diQgLVivKMWYMa4BMwiWQEf3rQvJAAAAc1JREFUSMedluty4jAMRo3jSxJyv5RCCoV2z/u/4kJmt46pSWv0gyGyz8xnWZYkvtu2lUWtQdeFbLfiR9s2Bs9Ms06lO4BB2iQtyzSxcgDYpQ+BvAIym3s+mwFVHibeNOy77/5uD/otAKgDmEQELTFwUPfeTQFSPZKsJBSbOyKjfxUr9tqTeYwq0E5UWJymWKo40HtEGWJ6DotYgafqUge1wVfcco1crk2GoDaJ/n8/FUb5oQgjylD9yxJIlgtH4EEIIJ3/7Ngv3O8nvpBxHJXH7NnNuQvdgqhwCODfXwe3vG7IvCOuISKjuf4arHM1rCMWM+vKXaq/XK1ZQfKbspbhPkNXEDHQComMQObtBTYGsRSiJolBEmqhSWOQFC2gjEFKeAaJF/bE8eODfHziKmMTJqN1aRlGmperuQ1/oHTJH0YAGrfWYrwnFka8s54ZvYccRqp3/yG7cuFMjePokJMjbltPrigFDTgqvyh1rvSFEb/aq4FTuMA6w0zLz5H+sijQweZSX5ZfH2CDzeJhz+h6qs+oltRpziqq8X30ZFNMexUWzlNEE5/voVIRo8IsIv389UAyXeXEjD2tzNCb6OFqCMckPMJRH2UbmAD+AsYRQLX7RorIAAAAAElFTkSuQmCC");
+  --icon-switch-size: 50rpx 50rpx;
+
+  /* 出发地图标 */
+  --icon-start:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAFVBMVEUYyLoAAAAYyLoYyLoYyLoYyLoYyLpGSsGzAAAABnRSTlPgAIAQMPDrZs23AAAAN0lEQVQI12MQNGJLUBZkEGFLS0t1ZDBNAwJmBjUQlcTABqISGNLAAEpBBWFKDMAawNoTHKGGAQCBLRVtpx5EEQAAAABJRU5ErkJggg==");
+  --icon-start-size: 12rpx 12rpx;
+
+  /* 目的地图标 */
+  --icon-end: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAFVBMVEX/VQAAAAD/VQD/VQD/VQD/VQD/VQADP3jbAAAABnRSTlPgAIAQMPDrZs23AAAAN0lEQVQI12MQNGJLUBZkEGFLS0t1ZDBNAwJmBjUQlcTABqISGNLAAEpBBWFKDMAawNoTHKGGAQCBLRVtpx5EEQAAAABJRU5ErkJggg==");
+  --icon-end-size: 12rpx 12rpx;
+
+  /* 出发日期图标 */
+  --icon-date: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAJ1BMVEUAAAB/f39/f39/f39/f39/f3/f39////+/v7/v7+/Hx8efn5+Pj48OOw4mAAAABXRSTlMA0JAgEJEfMx4AAABnSURBVAjXY2BgYFYMDRUyYAAB1VAgCAKxHEPBQISBgUUUwgx0YGAKhQIFBlMgGZYKJIIZVMFMsEZRGDOQIRTGDMVgzujoOAphRpWXl28NBWmD2gFxAcQVpjBmMLLFCOcgHInidISHAMESN33fzyU9AAAAAElFTkSuQmCC");
+  --icon-date-size: 20rpx 20rpx;
+
+  /* 座位人数图标 */
+  --icon--number: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAMFBMVEUAAAB/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f3+rdzeOAAAAD3RSTlMA8sAwcOCwlBAg0KCAQGB0ZzZrAAAAc0lEQVQI12MAgmv//+cygAHPfyA4AGb6g5j/QCxOeRDzYwOQyfIfDByATCYIUwEnkx3CLAAymSFMA5Bp+SDWN7AVXSDmCjCTo/D/f3GIG1xBoiEglilEWzDQAHkI86MBw8T/UCDJsB/G/M0AlIeqYPgPBwBsVnzbMvFgTAAAAABJRU5ErkJggg==");
+  --icon-number-size: 20rpx 20rpx;
+
+  /* 备注图标 */
+  --icon-remark: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAG1BMVEV/f39/f3/f39////+/v7+fn5+vr6+Xl5fHx8f5MVx4AAAAAXRSTlOArV5bRgAAAD5JREFUCNdjYBSEAgEGQTjAyRQPDYUxhYyNYUwxFxf82iSUlJQSUZiYahGGAUEi1AogUIRaDASFuLXBAZKHAKFxEqmnmjTTAAAAAElFTkSuQmCC");
+  --icon-remark-size: 20rpx 20rpx;
+
+  /* 用户图标 小 */
+  --icon-usercenter: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAaVBMVEUAAABASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASllASln73vBuAAAAInRSTlMA8PbjCvrprZJoYw20n5lGOh4S1oltXEAxJBe+zKh0VCjAKmG2NAAAAQ1JREFUKM91kueuhCAQhSkCKhZsa9t2z/s/5DW7shT1+0Hm5AsTMgPxqEsuBC9rcsb8h511PtpJAkVuTF4AcoptyyHHbzlK8DbSKejb1m+KNLoskLmUQYTXb6CJSwnFLdA9Cj8W6ANdovJjhTJ6mfKjit6WQfpRIgt0A7xcegENCVDgi60XDkVCGopu3offgTYkomZgqVkWk27FydJGgR0xHmTbU/ygfbSSbJNMDfU01YNiAM08mShADomNepCASn52BSpNPHQFrNYXcENyY7RLegI5OZADz89AmNtWuDXWfJbFkzOtOdLtZK513J5p+40c4Zd6oCQXlHiQzvU+du+IgLnSBoLcub7Smt//AdvjFP8fZlKOAAAAAElFTkSuQmCC");
+  --icon-usercenter-size: 30upx 30upx;
+  /*------图标区域 end------*/
+
+
+
+
+}

@@ -1,0 +1,10 @@
+@import "common/vendor.wxss";
+
+page {
+  position: relative;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.container {
+  position: relative;
+  height: 100%;
+}
